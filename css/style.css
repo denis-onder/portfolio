@@ -1,0 +1,8 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #011638;
+  color: #F0F3F5;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  overflow: hidden; }
