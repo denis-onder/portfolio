@@ -1,4 +1,17 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
+@keyframes animatedSpinner {
+  0% {
+    width: 0%; }
+  100% {
+    width: 100%; } }
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0;
+    display: none; } }
+
 #nav {
   display: flex;
   align-items: center;
@@ -38,6 +51,7 @@
         border-bottom-color: #F15025; }
 
 #hero {
+  z-index: 1;
   position: absolute;
   top: 20%;
   left: 10%; }
@@ -90,6 +104,54 @@
           transition: 0.2s; }
           #hero .hero_social ul li a:hover {
             color: #F15025; }
+
+/*
+HTML
+<div id="spinner">
+    <p>d<span id="o">o</span></p>
+    <span id="outerSpan">
+        <div id="innerSpan">
+        </div>
+    </span>
+</div>
+*/
+#spinner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #011638;
+  z-index: 999;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden; }
+  #spinner p {
+    color: #F0F3F5;
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 10px; }
+    #spinner p #o {
+      color: #F15025;
+      background-color: transparent !important; }
+  #spinner #outerSpan {
+    width: 200px;
+    height: 7px;
+    background-color: #023483;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center; }
+  #spinner #innerSpan {
+    width: 0;
+    height: 7px;
+    background-color: #F15025;
+    border-radius: 10px;
+    animation: animatedSpinner 2s;
+    animation-fill-mode: forwards; }
+  #spinner .fadeOut {
+    animation: fadeOut 0.3s;
+    animation-fill-mode: forwards; }
 
 body {
   margin: 0;
