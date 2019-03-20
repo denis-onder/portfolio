@@ -10,15 +10,13 @@ body {
   overflow: hidden; }
 
 #nav {
-  position: fixed;
-  top: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
   width: 100%;
-  height: 70px;
-  line-height: 85px;
-  cursor: pointer; }
+  height: 70px; }
   #nav .nav_logo {
     margin-left: 10%;
-    float: left;
     font-weight: bold; }
     #nav .nav_logo p {
       margin: 0;
@@ -26,22 +24,27 @@ body {
       #nav .nav_logo p span {
         color: #F15025; }
   #nav .nav_links {
-    float: right;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    position: absolute;
+    right: 0;
     list-style-type: none;
     margin: 0 10% 0 0;
     padding: 0; }
     #nav .nav_links li {
+      display: inline;
       margin: 0 10px; }
-      #nav .nav_links li a {
+      #nav .nav_links li .nav_link {
         font-size: 24px;
         padding: 10px;
         color: #F0F3F5;
+        cursor: pointer;
+        transition: 0.2s;
         text-decoration: none;
-        cursor: pointer; }
+        border-bottom: 2px solid transparent;
+        border-spacing: 3px; }
+        #nav .nav_links li .nav_link:hover {
+          border-bottom: 2px solid #a52b0b; }
+      #nav .nav_links li .nav_link--active {
+        border-bottom-color: #F15025; }
 
 #hero {
   position: absolute;
@@ -63,12 +66,12 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-size: 32px; }
+    font-size: 32px;
+    cursor: pointer; }
     #hero .hero_link p {
       margin: 0 30px 0 0; }
     #hero .hero_link i {
-      color: #F15025;
-      cursor: pointer; }
+      color: #F15025; }
   #hero .hero_social {
     margin-top: 100px; }
     #hero .hero_social ul {
@@ -85,6 +88,6 @@ body {
         #hero .hero_social ul li a {
           color: #F0F3F5;
           text-decoration: none;
-          display: flex;
-          flex-direction: row;
-          align-items: center; }
+          transition: 0.2s; }
+          #hero .hero_social ul li a:hover {
+            color: #F15025; }
