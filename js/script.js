@@ -1,6 +1,10 @@
-const redirectToAbout = () => {
-  window.location.href = '/about';
+const _redirectToAbout = () => {
+  window.location.href = '/about.html';
 };
+
+const _redirectToHome = () => {
+  window.location.href = '/index.html';
+}
 
 const navTagUnderline = () => {
   const tags = document.getElementsByClassName('nav_link');
@@ -22,4 +26,5 @@ const navTagUnderline = () => {
 };
 
 navTagUnderline();
-document.getElementById('learnMore').addEventListener('click', redirectToAbout);
+document.getElementById('learnMore').addEventListener('click', _redirectToAbout);
+document.getElementById('navLogo').addEventListener('click', _redirectToHome);
