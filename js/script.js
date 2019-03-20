@@ -3,27 +3,25 @@ const _redirectToAbout = () => {
 };
 
 const _redirectToHome = () => {
-  window.location.href = '/index.html';
+  window.location.href = '/';
 }
 
 const navTagUnderline = () => {
   const tags = document.getElementsByClassName('nav_link');
-  const urlLocation = `/${window.location.href.split('/')[3]}`;
-  // Remove class from all tags
-  for (let i = 0; i < tags.length; i++) {
-    tags[i].classList.remove('nav_link--active');
-  }
-  // Check if the page is on the landing page
-  if (urlLocation === '/index') {
-    tags[0].classList.add('nav_link--active');
-  } else {
-    for (let i = 0; i < tags.length; i++) {
-      const attrLocation = tags[i].getAttribute('href').replace('.', '');
-      if (attrLocation === urlLocation) {
-        tags[i].classList.add('nav_link--active');
+  // Split url string
+  const urlString = window.location.href.split('/');
+  // Loop through strings
+  for (let i = 0; i < urlString.length; i++) {
+    // Check if current iteration matches with one of the tag href attributes
+    for (let j = 0; j < tags.length; j++) {
+      // Remove any active classes
+      tags[j].classList.remove('nav_link--active');
+      if (`/${urlString[i]}` === tags[j].getAttribute('href').replace('.', '')) {
+        tags[j].classList.add('nav_link--active');
+        return;
       }
     }
-  }
+  };
 };
 
 navTagUnderline();
