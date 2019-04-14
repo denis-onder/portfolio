@@ -61,21 +61,21 @@
   left: 10%; }
   #hero .hero_name {
     margin: 0;
-    font-size: 62px; }
+    font-size: 92px; }
   #hero .hero_name--red {
     color: #F15025;
     margin: 0;
-    font-size: 62px; }
+    font-size: 92px; }
   #hero .hero_text {
     margin: 30px 0; }
     #hero .hero_text p {
       margin: 0;
-      font-size: 20px; }
+      font-size: 30px; }
   #hero .hero_link {
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-size: 32px;
+    font-size: 42px;
     cursor: pointer; }
     #hero .hero_link a {
       color: #F0F3F5;
@@ -111,9 +111,65 @@
         #hero .hero_social ul li a {
           color: #F0F3F5;
           text-decoration: none;
-          transition: 0.2s; }
+          transition: 0.2s;
+          font-size: 22px; }
           #hero .hero_social ul li a:hover {
             color: #F15025; }
+
+#about {
+  position: absolute;
+  top: 20%;
+  left: 10%; }
+  #about .red {
+    color: #F15025; }
+  #about .about_title {
+    font-size: 92px;
+    font-weight: bold;
+    color: #F0F3F5; }
+  #about .about_text {
+    width: 70% !important; }
+    #about .about_text .about_text--line {
+      font-size: 22px; }
+      #about .about_text .about_text--line a {
+        color: #F0F3F5;
+        text-decoration: underline #F15025; }
+  #about .about_text--outro .about_text--outro_line {
+    font-size: 42px;
+    margin: 0; }
+
+#portfolio {
+  position: absolute;
+  top: 20%;
+  left: 10%; }
+  #portfolio h1 {
+    font-size: 82px; }
+    #portfolio h1 span {
+      color: #F15025; }
+  #portfolio .project_output {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    #portfolio .project_output .project_window {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; }
+      #portfolio .project_output .project_window i {
+        margin: 0 20px;
+        cursor: pointer;
+        transition: all ease-in-out 0.2s; }
+        #portfolio .project_output .project_window i:hover {
+          color: #d5380e; }
+    #portfolio .project_output .project_output_text {
+      text-align: center; }
+      #portfolio .project_output .project_output_text h4 {
+        font-size: 32px;
+        margin-bottom: 5px; }
+      #portfolio .project_output .project_output_text .project_tag {
+        border-radius: 3px;
+        background-color: #5d1806;
+        padding: 3px 5px; }
 
 /*
 HTML
