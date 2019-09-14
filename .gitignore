@@ -1,12 +1,1 @@
-# dependencies
 /node_modules
-
-# uncompiled css
-/scss
-/assets/scss_imports
-
-# uncomplied js
-/js/main.js
-
-# bash scripts
-*.sh

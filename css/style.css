@@ -28,9 +28,9 @@
       #nav .nav_logo a p {
         margin: 0;
         font-size: 48px;
-        color: #F0F3F5; }
+        color: #f0f3f5; }
         #nav .nav_logo a p span {
-          color: #F15025; }
+          color: #f15025; }
   #nav .nav_links {
     position: absolute;
     right: 0;
@@ -43,7 +43,7 @@
       #nav .nav_links li .nav_link {
         font-size: 24px;
         padding: 10px;
-        color: #F0F3F5;
+        color: #f0f3f5;
         cursor: pointer;
         text-decoration: none;
         transition: 0.2s;
@@ -52,7 +52,7 @@
         #nav .nav_links li .nav_link:hover {
           border-bottom-color: #a52b0b; }
       #nav .nav_links li .nav_link--active {
-        border-bottom-color: #F15025; }
+        border-bottom-color: #f15025; }
 
 #hero {
   z-index: 1;
@@ -63,7 +63,7 @@
     margin: 0;
     font-size: 92px; }
   #hero .hero_name--red {
-    color: #F15025;
+    color: #f15025;
     margin: 0;
     font-size: 92px; }
   #hero .hero_text {
@@ -78,7 +78,7 @@
     font-size: 42px;
     cursor: pointer; }
     #hero .hero_link a {
-      color: #F0F3F5;
+      color: #f0f3f5;
       text-decoration: none;
       display: flex;
       flex-direction: row;
@@ -90,7 +90,7 @@
         margin: 0 30px 0 0; }
       #hero .hero_link a i {
         transition: 0.2s;
-        color: #F15025; }
+        color: #f15025; }
     #hero .hero_link:hover p {
       border-bottom-color: #a52b0b; }
     #hero .hero_link:hover i {
@@ -109,30 +109,30 @@
         #hero .hero_social ul li i {
           margin-right: 10px; }
         #hero .hero_social ul li a {
-          color: #F0F3F5;
+          color: #f0f3f5;
           text-decoration: none;
           transition: 0.2s;
           font-size: 22px; }
           #hero .hero_social ul li a:hover {
-            color: #F15025; }
+            color: #f15025; }
 
 #about {
   position: absolute;
   top: 20%;
   left: 10%; }
   #about .red {
-    color: #F15025; }
+    color: #f15025; }
   #about .about_title {
     font-size: 92px;
     font-weight: bold;
-    color: #F0F3F5; }
+    color: #f0f3f5; }
   #about .about_text {
     width: 70% !important; }
     #about .about_text .about_text--line {
       font-size: 22px; }
       #about .about_text .about_text--line a {
-        color: #F0F3F5;
-        text-decoration: underline #F15025; }
+        color: #f0f3f5;
+        text-decoration: underline #f15025; }
   #about .about_text--outro .about_text--outro_line {
     font-size: 42px;
     margin: 0; }
@@ -144,7 +144,7 @@
   #portfolio h1 {
     font-size: 82px; }
     #portfolio h1 span {
-      color: #F15025; }
+      color: #f15025; }
   #portfolio .project_output {
     display: flex;
     flex-direction: column;
@@ -171,16 +171,6 @@
         background-color: #5d1806;
         padding: 3px 5px; }
 
-/*
-HTML
-<div id="spinner">
-    <p>d<span id="o">o</span></p>
-    <span id="outerSpan">
-        <div id="innerSpan">
-        </div>
-    </span>
-</div>
-*/
 #spinner {
   display: flex;
   flex-direction: column;
@@ -192,12 +182,12 @@ HTML
   height: 100vh;
   overflow: hidden; }
   #spinner p {
-    color: #F0F3F5;
+    color: #f0f3f5;
     font-size: 42px;
     font-weight: bold;
     margin-bottom: 10px; }
     #spinner p #o {
-      color: #F15025;
+      color: #f15025;
       background-color: transparent !important; }
   #spinner #outerSpan {
     width: 200px;
@@ -211,7 +201,7 @@ HTML
   #spinner #innerSpan {
     width: 0;
     height: 7px;
-    background-color: #F15025;
+    background-color: #f15025;
     border-radius: 10px;
     animation: animatedSpinner 2s;
     animation-fill-mode: forwards; }
@@ -225,6 +215,6 @@ body {
   width: 100%;
   height: 100vh;
   background-color: #011638;
-  color: #F0F3F5;
+  color: #f0f3f5;
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   overflow: hidden; }
