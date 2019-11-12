@@ -10,7 +10,7 @@ export default function landing() {
         <p>Currently working within the MERN stack.</p>
       </div>
       <div class="hero_link" id="learnMore">
-        <a href="./about.html">
+        <a href="/about">
           <p>learn more</p>
           <i class="fas fa-arrow-right"></i>
         </a>
