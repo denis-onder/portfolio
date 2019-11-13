@@ -5,7 +5,7 @@ import About from "./components/about";
 import Projects from "./components/projects";
 import Contact from "./components/contact";
 
-function App() {
+export default function App() {
   return (
     <Router>
       <nav id="nav">
@@ -17,22 +17,22 @@ function App() {
           </Link>
         </div>
         <ul className="nav_links">
-          <li>
+          <li className="nav_links_link" data-endpoint="/">
             <Link to="/" className="nav_link">
               home
             </Link>
           </li>
-          <li>
+          <li className="nav_links_link" data-endpoint="/about">
             <Link to="/about" className="nav_link">
               about me
             </Link>
           </li>
-          <li>
+          <li className="nav_links_link" data-endpoint="/projects">
             <Link to="/projects" className="nav_link">
               projects
             </Link>
           </li>
-          <li>
+          <li className="nav_links_link" data-endpoint="/contact">
             <Link to="/contact" className="nav_link">
               contact
             </Link>
@@ -46,5 +46,3 @@ function App() {
     </Router>
   );
 }
-
-export default App;

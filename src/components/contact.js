@@ -1,5 +1,11 @@
-import React from "react";
+import React, { Component } from "react";
+import setNavUnderline from "../utils/setNavUnderline";
 
-export default function contact() {
-  return <div id="contact"></div>;
+export default class Contact extends Component {
+  componentDidMount() {
+    setNavUnderline();
+  }
+  render() {
+    return <div id="contact"></div>;
+  }
 }
