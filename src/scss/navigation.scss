@@ -1,0 +1,40 @@
+@import "./imports/_vars";
+
+#navigation {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: $navbar_width;
+  background-color: #222;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #4d4d4e;
+  .navigation_icons {
+    padding: 0;
+    width: 100%;
+    list-style-type: none;
+    text-align: center;
+    .navigation_icons_icon {
+      cursor: pointer;
+      transition: $transition;
+      &:hover {
+        color: white;
+      }
+      &--github:hover {
+        color: #00bcd5;
+      }
+      &--linkedin:hover {
+        color: #0073b0;
+      }
+      &--reddit:hover {
+        color: #ff4300;
+      }
+    }
+    i {
+      font-size: 22px;
+      margin: 5px 0;
+    }
+  }
+}
