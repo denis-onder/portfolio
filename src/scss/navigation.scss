@@ -6,7 +6,7 @@
   top: 0;
   height: 100vh;
   width: $navbar_width;
-  background-color: #222;
+  background-color: $navbar_background;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -20,7 +20,7 @@
       cursor: pointer;
       transition: $transition;
       &:hover {
-        color: white;
+        color: $red;
       }
       &--github:hover {
         color: #00bcd5;
@@ -33,8 +33,8 @@
       }
     }
     i {
-      font-size: 22px;
-      margin: 5px 0;
+      font-size: 28px;
+      margin: 7.5px 0;
     }
   }
 }

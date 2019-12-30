@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../scss/home.scss";
 
 export default function Home() {
@@ -11,32 +12,7 @@ export default function Home() {
         <p>Currently working within the MERN stack.</p>
       </div>
       <div className="home_link" id="learnMore">
-        <a href="/about">
-          <p>learn more</p>
-          <i className="fas fa-arrow-right"></i>
-        </a>
-      </div>
-      <div className="home_social">
-        <ul>
-          <li>
-            <a
-              href="https://github.com/denis-onder"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fab fa-github-square fa-2x"></i>github
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/dennis-onder/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fab fa-linkedin fa-2x"></i>linkedin
-            </a>
-          </li>
-        </ul>
+        <Link to="/contact">contact me</Link>
       </div>
     </div>
   );

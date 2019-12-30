@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 
-$navbar_width: 50px;
+$navbar_width: 60px;
 $fonts: "Montserrat", Arial, Helvetica, sans-serif;
 $transition: all ease-in-out 0.2s;
+$red: #f15025;
+$background: #011638;
+$navbar_background: darken($background, 3%);
