@@ -27,22 +27,22 @@ export default function Navigation() {
       {/* Navigation Icons */}
       <ul className="navigation_icons">
         <Link to="/">
-          <li className="navigation_icons_icon">
+          <li className="navigation_icons_icon navigation_icons_icon--link">
             <i className="fas fa-home"></i>
           </li>
         </Link>
         <Link to="/about">
-          <li className="navigation_icons_icon">
+          <li className="navigation_icons_icon navigation_icons_icon--link">
             <i className="fas fa-user"></i>
           </li>
         </Link>
         <Link to="/portfolio">
-          <li className="navigation_icons_icon">
+          <li className="navigation_icons_icon navigation_icons_icon--link">
             <i className="fas fa-laptop-code"></i>
           </li>
         </Link>
         <Link to="/contact">
-          <li className="navigation_icons_icon">
+          <li className="navigation_icons_icon navigation_icons_icon--link">
             <i className="fas fa-envelope"></i>
           </li>
         </Link>
