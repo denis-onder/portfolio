@@ -2,15 +2,11 @@
 
 #home {
   width: 100%;
-  height: 50%;
-  overflow: hidden;
-  margin: auto;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
+  height: 100vh;
   margin-left: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   .home_name {
     margin: 0;
     font-size: 92px;
@@ -27,8 +23,10 @@
     }
   }
   .home_link {
+    width: 30%;
     font-size: 42px;
     cursor: pointer;
+    text-align: center;
     transition: $transition;
     border: 1px solid $red;
     color: #f0f3f5;
