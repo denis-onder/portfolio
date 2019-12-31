@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../../scss/navigation.scss";
 
 function redirect({ target }) {
@@ -16,22 +17,32 @@ export default function Navigation() {
     <nav id="navigation">
       {/* Logo */}
       <div className="navigation_logo">
-        <p className="temp_logo">DO</p>
+        <p className="temp_logo">
+          d<span>o</span>
+        </p>
       </div>
       {/* Navigation Icons */}
       <ul className="navigation_icons">
-        <li className="navigation_icons_icon">
-          <i className="fas fa-home"></i>
-        </li>
-        <li className="navigation_icons_icon">
-          <i className="fas fa-user"></i>
-        </li>
-        <li className="navigation_icons_icon">
-          <i className="fas fa-laptop-code"></i>
-        </li>
-        <li className="navigation_icons_icon">
-          <i className="fas fa-envelope"></i>
-        </li>
+        <Link to="/">
+          <li className="navigation_icons_icon">
+            <i className="fas fa-home"></i>
+          </li>
+        </Link>
+        <Link to="/about">
+          <li className="navigation_icons_icon">
+            <i className="fas fa-user"></i>
+          </li>
+        </Link>
+        <Link to="/work">
+          <li className="navigation_icons_icon">
+            <i className="fas fa-laptop-code"></i>
+          </li>
+        </Link>
+        <Link to="/contact">
+          <li className="navigation_icons_icon">
+            <i className="fas fa-envelope"></i>
+          </li>
+        </Link>
       </ul>
       {/* Social Media Icons */}
       <ul className="navigation_icons">

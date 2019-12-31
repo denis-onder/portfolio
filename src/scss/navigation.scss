@@ -10,12 +10,28 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  color: #4d4d4e;
+  .navigation_logo {
+    width: 100%;
+    font-size: 32px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    p {
+      margin: 10px 0;
+      span {
+        color: $red;
+      }
+    }
+  }
   .navigation_icons {
     padding: 0;
     width: 100%;
     list-style-type: none;
     text-align: center;
+    &,
+    a {
+      color: $gray;
+    }
     .navigation_icons_icon {
       cursor: pointer;
       transition: $transition;
@@ -34,7 +50,7 @@
     }
     i {
       font-size: 28px;
-      margin: 7.5px 0;
+      margin: 10px 0;
     }
   }
 }
