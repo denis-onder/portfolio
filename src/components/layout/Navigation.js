@@ -36,7 +36,7 @@ export default function Navigation() {
             <i className="fas fa-user"></i>
           </li>
         </Link>
-        <Link to="/work">
+        <Link to="/portfolio">
           <li className="navigation_icons_icon">
             <i className="fas fa-laptop-code"></i>
           </li>
@@ -51,8 +51,9 @@ export default function Navigation() {
       <ul className="navigation_icons">
         <li
           className="navigation_icons_icon navigation_icons_icon--github"
-          onClick={redirect}
           data-link="https://github.com/denis-onder"
+          data-text="GitHub"
+          onClick={redirect}
         >
           <i className="fab fa-github"></i>
         </li>
