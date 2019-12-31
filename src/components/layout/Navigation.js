@@ -2,13 +2,16 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../../scss/navigation.scss";
 
-function redirect({ target }) {
+function getAttributeFromNavLink(target, attribute) {
   const { tagName: tag } = target;
   // If the event target's the actual icon, select the parent list element for link extraction
-  const link =
-    tag === "LI"
-      ? target.getAttribute("data-link")
-      : target.parentElement.getAttribute("data-link");
+  return tag === "LI"
+    ? target.getAttribute(attribute)
+    : target.parentElement.getAttribute(attribute);
+}
+
+function redirect({ target }) {
+  const link = getAttributeFromNavLink(target, "data-link");
   window.open(link);
 }
 
