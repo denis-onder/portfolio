@@ -5,9 +5,6 @@ import "../scss/home.scss";
 export default function Home() {
   return (
     <div id="home">
-      <div id="info">
-        Please note that this project is still <b>WIP</b>. Thanks!
-      </div>
       <h1 className="home_name">
         denis <span>onder</span>
       </h1>
