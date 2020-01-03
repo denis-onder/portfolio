@@ -38,6 +38,16 @@ export default function About() {
           </a>{" "}
           and I would always love to talk about your projects!
         </p>
+        <p className="about_text_paragraph">
+          You can also email me at{" "}
+          <a
+            href="mailto:denis_onder@protonmail.com"
+            className="about_text_paragraph_link"
+          >
+            denis_onder@protonmail.com
+          </a>
+          .
+        </p>
       </div>
     </div>
   );

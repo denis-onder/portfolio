@@ -1,5 +1,21 @@
 @import "./imports/_vars";
 
 #about {
-  position: absolute;
+  .about_header {
+    font-size: 62px;
+    & > span {
+      color: $red;
+    }
+  }
+  .about_text_paragraph {
+    font-size: 22px;
+    a {
+      text-decoration-color: $red;
+      color: #fff;
+    }
+    span {
+      text-decoration: underline;
+      text-decoration-color: $red;
+    }
+  }
 }
