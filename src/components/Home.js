@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../scss/home.scss";
+import setCurrentlyActiveIcon from "../events/setCurrentlyActiveIcon";
 
 export default function Home() {
   return (
@@ -12,7 +13,11 @@ export default function Home() {
         <p>I'm a full-stack web developer from Bosnia and Herzegovina.</p>
         <p>Currently working within the MERN stack.</p>
       </div>
-      <Link className="home_link" to="/contact">
+      <Link
+        className="home_link"
+        to="/contact"
+        onClick={() => setCurrentlyActiveIcon("/contact")}
+      >
         contact me
       </Link>
     </div>

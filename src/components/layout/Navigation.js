@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import setCurrentlyActiveIcon from "../../events/setCurrentlyActiveIcon";
 import "../../scss/navigation.scss";
 
 function getAttributeFromNavLink(target, attribute) {
@@ -27,22 +28,38 @@ export default function Navigation() {
       {/* Navigation Icons */}
       <ul className="navigation_icons">
         <Link to="/">
-          <li className="navigation_icons_icon navigation_icons_icon--link">
+          <li
+            id="/"
+            className="navigation_icons_icon navigation_icons_icon--link"
+            onClick={() => setCurrentlyActiveIcon("/")}
+          >
             <i className="fas fa-home"></i>
           </li>
         </Link>
         <Link to="/about">
-          <li className="navigation_icons_icon navigation_icons_icon--link">
+          <li
+            id="/about"
+            className="navigation_icons_icon navigation_icons_icon--link"
+            onClick={() => setCurrentlyActiveIcon("/about")}
+          >
             <i className="fas fa-user"></i>
           </li>
         </Link>
         <Link to="/portfolio">
-          <li className="navigation_icons_icon navigation_icons_icon--link">
+          <li
+            id="/portfolio"
+            className="navigation_icons_icon navigation_icons_icon--link"
+            onClick={() => setCurrentlyActiveIcon("/portfolio")}
+          >
             <i className="fas fa-laptop-code"></i>
           </li>
         </Link>
         <Link to="/contact">
-          <li className="navigation_icons_icon navigation_icons_icon--link">
+          <li
+            id="/contact"
+            className="navigation_icons_icon navigation_icons_icon--link"
+            onClick={() => setCurrentlyActiveIcon("/contact")}
+          >
             <i className="fas fa-envelope"></i>
           </li>
         </Link>
