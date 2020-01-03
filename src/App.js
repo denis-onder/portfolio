@@ -7,6 +7,7 @@ import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
 import Loader from "./components/layout/Loader";
 import Info from "./components/layout/Info";
+import VerticalNavigation from "./components/layout/VerticalNavigation";
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
       <Loader />
       <Info />
       <Navigation />
+      <VerticalNavigation />
       <Route exact path="/" component={Home} />
       <Route exact path="/about" component={About} />
       <Route exact path="/portfolio" component={Portfolio} />

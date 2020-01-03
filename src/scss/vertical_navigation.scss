@@ -1,0 +1,22 @@
+@import "./imports/_vars";
+
+#vertical_navigation {
+  position: fixed;
+  bottom: 25px;
+  right: 10px;
+  span {
+    background-color: $red;
+    color: $background;
+    margin: 0 10px;
+    padding: 0.15em 0.35em;
+    font-size: 32px;
+    transition: $transition;
+    cursor: pointer;
+    &:hover {
+      background-color: $dark_red;
+      -webkit-box-shadow: 0px 0px 10px -3px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 0px 0px 10px -3px rgba(0, 0, 0, 0.75);
+      box-shadow: 0px 0px 10px -3px rgba(0, 0, 0, 0.75);
+    }
+  }
+}
