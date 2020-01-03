@@ -81,13 +81,6 @@ export default function Navigation() {
         >
           <i className="fab fa-linkedin"></i>
         </li>
-        <li
-          className="navigation_icons_icon navigation_icons_icon--reddit"
-          onClick={redirect}
-          data-link="https://reddit.com/u/ShadowpathHD"
-        >
-          <i className="fab fa-reddit"></i>
-        </li>
       </ul>
     </nav>
   );
