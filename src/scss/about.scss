@@ -10,12 +10,16 @@
   .about_text_paragraph {
     font-size: 22px;
     a {
-      text-decoration-color: $red;
+      text-decoration: none;
       color: #fff;
+      &:hover {
+        border-bottom-color: $dark_red;
+      }
     }
+    a,
     span {
-      text-decoration: underline;
-      text-decoration-color: $red;
+      transition: $transition;
+      border-bottom: 2px solid $red;
     }
   }
 }

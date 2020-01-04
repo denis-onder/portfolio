@@ -1,6 +1,14 @@
 import React from "react";
 import "../scss/about.scss";
 
+/** * Hi, my name is Denis Onder, and I am a web developer!
+
+I’m passionate about building software, and I am always striving to go above and beyond to ensure I get the job done right the first time.
+
+I’ve been programming for over two years, and I love it because it gives me the chance to build something that might be useful to others.
+
+ */
+
 export default function About() {
   return (
     <div id="about" className="margins">
@@ -10,16 +18,16 @@ export default function About() {
       <div className="about_text">
         <p className="about_text_paragraph">Hello there!</p>
         <p className="about_text_paragraph">
-          My name is <span>Denis Onder</span>, and I am a student and an
-          aspiring web developer!
+          Hi, my name is <span>Denis Onder</span>, and I am a web developer!
         </p>
         <p className="about_text_paragraph">
-          Currently working within the MERN stack, and looking to expand my
-          knowledge even further.
+          I’m passionate about building software, and I am always striving to go
+          above and beyond to ensure I get the job done.
         </p>
         <p className="about_text_paragraph">
-          Enrolled in an online software engineering bootcamp, and always
-          looking for new job opportunities!
+          I’ve been programming for over two years now, and I love it because it
+          gives me the chance to build pieces of software that might have an
+          impact on people's lives!
         </p>
         <p className="about_text_paragraph">
           I am available on{" "}
@@ -47,6 +55,9 @@ export default function About() {
             denis_onder@protonmail.com
           </a>
           .
+        </p>
+        <p className="about_text_paragraph">
+          Looking forward to talking with you!
         </p>
       </div>
     </div>
