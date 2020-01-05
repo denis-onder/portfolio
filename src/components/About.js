@@ -1,14 +1,6 @@
 import React from "react";
 import "../scss/about.scss";
 
-/** * Hi, my name is Denis Onder, and I am a web developer!
-
-I’m passionate about building software, and I am always striving to go above and beyond to ensure I get the job done right the first time.
-
-I’ve been programming for over two years, and I love it because it gives me the chance to build something that might be useful to others.
-
- */
-
 export default function About() {
   return (
     <div id="about" className="margins">
@@ -16,7 +8,6 @@ export default function About() {
         about <span>me</span>
       </h1>
       <div className="about_text">
-        <p className="about_text_paragraph">Hello there!</p>
         <p className="about_text_paragraph">
           Hi, my name is <span>Denis Onder</span>, and I am a web developer!
         </p>

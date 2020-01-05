@@ -1,1 +1,7 @@
 @import "./imports/_vars";
+
+#portfolio {
+  margin-left: $navbar_width;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
