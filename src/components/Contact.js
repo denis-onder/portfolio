@@ -40,6 +40,18 @@ export default function Contact() {
     }
     // Send email
     console.log(name, email, message); // FIXME Implement EmailJS for handling emails
+    const url = "https://powerful-anchorage-14818.herokuapp.com/mail";
+    fetch(url, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        sender: email,
+        name,
+        text: message
+      })
+    }).then(() => console.log("Email sent."));
   }
   return (
     <div id="contact">
