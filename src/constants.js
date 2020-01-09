@@ -12,6 +12,7 @@ export default [
   {
     key: 2,
     sourceCode: "https://github.com/denis-onder/sentinel-rebooted",
+    link: "https://infinite-atoll-23647.herokuapp.com/",
     name: "Sentinel",
     desc: "A free, open-source password manager.",
     img: sentinel_img
