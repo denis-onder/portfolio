@@ -74,3 +74,12 @@
     }
   }
 }
+
+@media (max-width: 476px) {
+  #contact {
+    margin-top: 16px;
+    h1 {
+      display: none;
+    }
+  }
+}

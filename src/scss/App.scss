@@ -8,5 +8,12 @@ body {
   background-color: $background;
   color: #fff;
   font-family: $fonts;
-  overflow: hidden;
+  overflow-y: hidden;
+  overflow-x: hidden !important;
+}
+
+@media (max-width: 1024px) {
+  body {
+    overflow-y: auto;
+  }
 }

@@ -9,4 +9,8 @@ export default (path = false) => {
   icons.forEach(icon => icon.classList.remove("active"));
   // Add active class to currently active icon
   currentlyActive.classList.add("active");
+  // Close modal if open
+  document
+    .getElementById("navigation_modal")
+    .classList.remove("navigation_modal--open");
 };
