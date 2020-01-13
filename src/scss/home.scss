@@ -60,7 +60,7 @@
       }
     }
     .home_link {
-      padding: 0.2em 0.4em;
+      padding: 0.25em 0.4em;
     }
   }
 }
@@ -92,7 +92,8 @@
   #home {
     .home_link {
       font-size: 20px;
-      padding: 0.2em;
+      // padding: 0.2em;
+      width: 90vw;
     }
   }
 }
@@ -100,7 +101,7 @@
 @media (max-width: 384px) {
   #home {
     .home_link {
-      font-size: 18px;
+      // font-size: 18px;
     }
   }
 }

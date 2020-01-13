@@ -48,3 +48,18 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .work_text {
+    font-size: 14px;
+    margin: 10px 0;
+  }
+  .work_overlay_wrapper {
+    margin-top: 0 !important;
+    margin-left: 10px !important;
+  }
+  .work_link {
+    margin: 5px 0 !important;
+    padding: 0.2em 0.4em;
+  }
+}
