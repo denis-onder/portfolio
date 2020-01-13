@@ -45,7 +45,7 @@
   background-color: $dark_red;
   #close_modal {
     position: absolute;
-    top: 10px;
+    top: 15px;
     right: 20px;
     color: $background;
     font-size: 32px;
@@ -127,5 +127,13 @@
   }
   #navigation_responsive {
     display: flex;
+    .temp_logo {
+      float: left;
+      margin-left: 20px;
+    }
+    .navigation_icons_icon {
+      float: right;
+      margin-right: 20px;
+    }
   }
 }
