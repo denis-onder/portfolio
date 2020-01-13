@@ -71,6 +71,18 @@
       }
     }
   }
+  #form_output {
+    &:not(:empty) {
+      transform: translateY(0);
+    }
+    transform: translateY(100%);
+    transition: $transition;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: $dark_red;
+    padding: 1em;
+  }
 }
 
 @media (max-width: 476px) {

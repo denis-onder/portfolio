@@ -15,6 +15,18 @@ const isInputInvalid = ({ name, email, message }) => {
   return false;
 };
 
+function setOutput(errors = false) {
+  let msg = "";
+  const output = document.getElementById("form_output");
+  if (errors) {
+    Object.keys(errors).map(v => (msg += `<p>${errors[v]}</p>`));
+  } else {
+    msg = "Email sent successfully!";
+  }
+  output.innerHTML = msg;
+  setTimeout(() => (output.innerHTML = ""), 3000);
+}
+
 export default function Contact() {
   // State
   const [name, setName] = useState("");
@@ -34,12 +46,9 @@ export default function Contact() {
   function sendEmail(e) {
     e.preventDefault();
     // Check if the input is valid
-    const inputResults = isInputInvalid({ name, email, message });
-    if (inputResults) {
-      return console.error(inputResults); // FIXME Add proper input validation and break here
-    }
+    const inputErrors = isInputInvalid({ name, email, message });
+    if (inputErrors) return setOutput(inputErrors);
     // Send email
-    console.log(name, email, message); // FIXME Implement EmailJS for handling emails
     const url = "https://powerful-anchorage-14818.herokuapp.com/mail";
     fetch(url, {
       method: "POST",
@@ -51,7 +60,9 @@ export default function Contact() {
         name,
         text: message
       })
-    }).then(() => console.log("Email sent."));
+    }).then(() => setOutput());
+    // Clear inputs
+    [setName, setEmail, setMessage].forEach(f => f(""));
   }
   return (
     <div id="contact">
@@ -82,6 +93,7 @@ export default function Contact() {
           <button type="submit">send</button>
         </form>
       </div>
+      <div id="form_output"></div>
     </div>
   );
 }
