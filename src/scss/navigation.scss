@@ -35,6 +35,7 @@
   }
   z-index: 2;
   display: none;
+  opacity: 0;
   transform: translateX(110%);
   position: fixed;
   justify-content: center;
@@ -59,13 +60,14 @@
       color: $background;
       &:hover {
         i {
-          color: #fff;
+          color: $background;
         }
       }
     }
   }
   &--open {
     transform: translateX(0);
+    opacity: 1;
   }
   hr {
     width: 70%;
