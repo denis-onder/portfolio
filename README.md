@@ -1,5 +1,5 @@
 # Portfolio
 
-> WIP
+> Be aware that this project is still being worked on.
 
-> Personal Portfolio
+[Click here](https://denisonder.xyz) to visit the live version
