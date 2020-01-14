@@ -13,4 +13,12 @@ export default (path = false) => {
   document
     .getElementById("navigation_modal")
     .classList.remove("navigation_modal--open");
+  // FIXME Reveal spinner
+  const loader = document.getElementById("animation_loader");
+  loader.style.transform = "translateX(0)";
+  loader.lastChild.firstChild.classList.add("show");
+  setTimeout(() => {
+    loader.style.transform = "translateX(100%)";
+    loader.lastChild.firstChild.classList.remove("show");
+  }, 2000);
 };

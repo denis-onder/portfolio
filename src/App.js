@@ -8,10 +8,12 @@ import Contact from "./components/Contact";
 import Loader from "./components/layout/Loader";
 import Info from "./components/layout/Info";
 import VerticalNavigation from "./components/layout/VerticalNavigation";
+import AnimationLoader from "./components/layout/AnimationLoader";
 
 export default function App() {
   return (
     <Router>
+      <AnimationLoader />
       <Loader />
       <Info />
       <Navigation />

@@ -5,13 +5,12 @@ import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import hideLoader from "./events/hideLoader";
 import revealAndCloseInfo from "./events/revealAndCloseInfo";
-import setCurrentlyActiveIcon from "./events/setCurrentlyActiveIcon";
 
 // Window listener
 window.onload = () => {
   hideLoader();
   revealAndCloseInfo();
-  setCurrentlyActiveIcon();
+  document.getElementById(window.location.pathname).classList.add("active");
 };
 
 ReactDOM.render(<App />, document.getElementById("root"));
