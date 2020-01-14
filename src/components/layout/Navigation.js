@@ -68,7 +68,7 @@ export default function Navigation() {
           <li
             className="navigation_icons_icon navigation_icons_icon--linkedin"
             onClick={redirect}
-            data-link="https://linkedin.com/in/dennis-onder"
+            data-link="https://linkedin.com/in/denis-onder"
           >
             <i className="fab fa-linkedin"></i>
           </li>
