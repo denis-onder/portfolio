@@ -1,3 +1,16 @@
+function handleAnimation() {
+  const loader = document.getElementById("animation_loader");
+  const root = document.getElementById("root_wrapper");
+  root.style.opacity = 0;
+  loader.style.transform = "translateX(0)";
+  loader.lastChild.firstChild.classList.add("show");
+  setTimeout(() => {
+    root.style.opacity = 1;
+    loader.style.transform = "translateX(100%)";
+    loader.lastChild.firstChild.classList.remove("show");
+  }, 2000);
+}
+
 export default (path = false) => {
   const icons = Array.from(
     document.getElementsByClassName("navigation_icons_icon--link")
@@ -13,12 +26,5 @@ export default (path = false) => {
   document
     .getElementById("navigation_modal")
     .classList.remove("navigation_modal--open");
-  // FIXME Reveal spinner
-  const loader = document.getElementById("animation_loader");
-  loader.style.transform = "translateX(0)";
-  loader.lastChild.firstChild.classList.add("show");
-  setTimeout(() => {
-    loader.style.transform = "translateX(100%)";
-    loader.lastChild.firstChild.classList.remove("show");
-  }, 2000);
+  handleAnimation();
 };

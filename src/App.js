@@ -18,10 +18,12 @@ export default function App() {
       <Info />
       <Navigation />
       <VerticalNavigation />
-      <Route exact path="/" component={Home} />
-      <Route exact path="/about" component={About} />
-      <Route exact path="/portfolio" component={Portfolio} />
-      <Route exact path="/contact" component={Contact} />
+      <div id="root_wrapper">
+        <Route exact path="/" component={Home} />
+        <Route exact path="/about" component={About} />
+        <Route exact path="/portfolio" component={Portfolio} />
+        <Route exact path="/contact" component={Contact} />
+      </div>
     </Router>
   );
 }

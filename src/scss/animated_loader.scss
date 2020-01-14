@@ -3,9 +3,9 @@
 #animation_loader {
   transition: $transition;
   transform: translateX(100%);
-  background-color: $background;
-  z-index: 10;
+  background-color: $light_background;
   position: fixed;
+  z-index: 3;
   top: 0;
   display: flex;
   flex-direction: column;
@@ -33,7 +33,7 @@
     .inner_bar {
       width: 0;
       height: 10px;
-      background-color: #fff;
+      background-color: $red;
       border-radius: 10px;
     }
   }
