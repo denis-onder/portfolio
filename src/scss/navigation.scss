@@ -97,13 +97,16 @@
   .navigation_icons_icon {
     cursor: pointer;
     transition: $transition;
-    &:hover {
-      color: $dark_red;
+    &:hover,
+    &:focus {
+      color: #fff;
     }
-    &--github:hover {
+    &--github:hover,
+    &--github:focus {
       color: #00bcd5;
     }
-    &--linkedin:hover {
+    &--linkedin:hover,
+    &--linkedin:focus {
       color: #0073b0;
     }
   }
@@ -115,6 +118,10 @@
 
 .active {
   color: $red;
+  &:hover,
+  &:focus {
+    color: $red !important;
+  }
 }
 
 @media (max-width: 768px) {
