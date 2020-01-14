@@ -1,7 +1,9 @@
 import React from "react";
+import setTitle from "../events/setTitle";
 import "../scss/about.scss";
 
 export default function About() {
+  setTitle("about");
   return (
     <div id="about" className="margins">
       <h1 className="about_header">

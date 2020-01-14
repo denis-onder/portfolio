@@ -2,8 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../scss/home.scss";
 import setCurrentlyActiveIcon from "../events/setCurrentlyActiveIcon";
+import setTitle from "../events/setTitle";
 
 export default function Home() {
+  setTitle("home");
   return (
     <div id="home">
       <h1 className="home_name">

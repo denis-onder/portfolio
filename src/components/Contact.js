@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import setTitle from "../events/setTitle";
 import "../scss/contact.scss";
 
 // eslint-disable-next-line
@@ -28,6 +29,7 @@ function setOutput(errors = false) {
 }
 
 export default function Contact() {
+  setTitle("contact");
   // State
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");

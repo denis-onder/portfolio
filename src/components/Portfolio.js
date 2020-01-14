@@ -1,9 +1,11 @@
 import React from "react";
 import Work from "./layout/Work";
 import constants from "../constants";
+import setTitle from "../events/setTitle";
 import "../scss/portfolio.scss";
 
 export default function Portfolio() {
+  setTitle("portfolio");
   return (
     // FIXME Remove hardcoded test components
     <div id="portfolio">
