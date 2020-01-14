@@ -13,16 +13,19 @@ import AnimationLoader from "./components/layout/AnimationLoader";
 export default function App() {
   return (
     <Router>
-      <AnimationLoader />
-      <Loader />
-      <Info />
-      <Navigation />
-      <VerticalNavigation />
-      <div id="root_wrapper">
-        <Route exact path="/" component={Home} />
-        <Route exact path="/about" component={About} />
-        <Route exact path="/portfolio" component={Portfolio} />
-        <Route exact path="/contact" component={Contact} />
+      <div>
+        {/* Test wrapper */}
+        <AnimationLoader />
+        <Loader />
+        <Info />
+        <Navigation />
+        <VerticalNavigation />
+        <div id="root_wrapper">
+          <Route exact path="/" component={Home} />
+          <Route exact path="/about" component={About} />
+          <Route exact path="/portfolio" component={Portfolio} />
+          <Route exact path="/contact" component={Contact} />
+        </div>
       </div>
     </Router>
   );
