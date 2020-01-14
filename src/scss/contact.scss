@@ -81,7 +81,17 @@
     bottom: 0;
     width: 100%;
     background-color: $dark_red;
-    padding: 1em;
+    padding: 1em 0;
+    text-align: center;
+    p {
+      margin: 8px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #form_output {
+    padding: 0;
   }
 }
 
