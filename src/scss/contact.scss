@@ -13,6 +13,7 @@
       align-items: center;
     }
     form {
+      width: 40%;
       * {
         width: 100%;
         padding: 0;
@@ -90,6 +91,13 @@
 }
 
 @media (max-width: 768px) {
+  #contact {
+    .contact_form {
+      form {
+        width: 80%;
+      }
+    }
+  }
   #form_output {
     padding: 0;
   }
