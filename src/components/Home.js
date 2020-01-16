@@ -40,14 +40,14 @@ export default function Home() {
           },
           interactivity: {
             events: {
-              onclick: {
+              onhover: {
                 enable: true,
-                mode: "push"
+                mode: "grab"
               }
             },
             modes: {
-              push: {
-                particles_nb: 1
+              grab: {
+                distance: 75
               }
             }
           },
