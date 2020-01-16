@@ -29,7 +29,7 @@ export default async () => {
   function animateBar({ firstChild }) {
     firstChild.classList.add("show");
     firstChild.style.backgroundColor =
-      Math.floor(Math.random() * 100) < 75 && "#fff";
+      Math.floor(Math.random() * 100) < 75 && "#ccc";
   }
 
   // Get children of a line
@@ -37,7 +37,7 @@ export default async () => {
     const bars = Array.from(line.children);
     if (bars.length === 1) {
       bars[0].style.width = "100%";
-      bars[0].style.backgroundColor = "#fff !important";
+      bars[0].style.backgroundColor = "#ccc !important";
     } else {
       // Generate random numbers to represent the width of each bar.
       const numbers = bars.map(_ => Math.random() * (100 / bars.length));

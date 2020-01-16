@@ -8,7 +8,7 @@
     }
   }
   .about_text_paragraph {
-    font-size: 22px;
+    font-size: 28px;
     a {
       text-decoration: none;
       color: #fff;
@@ -20,6 +20,14 @@
     span {
       transition: $transition;
       border-bottom: 2px solid $red;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  #about {
+    .about_text_paragraph {
+      font-size: 22px;
     }
   }
 }
