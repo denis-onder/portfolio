@@ -1,0 +1,47 @@
+@import "./imports/_vars";
+
+#container {
+  z-index: -1;
+  opacity: 0.12;
+  width: 100%;
+  height: 100%;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  .container_line {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    width: 90%;
+    .bar {
+      min-width: 3% !important;
+      width: 100%;
+      height: 10px;
+      margin: 0 5px 10px 5px;
+      background-color: $gray;
+      .inner_bar {
+        transition: all ease-in-out 0.2s;
+        width: 0;
+        height: 100%;
+        background-color: $red;
+      }
+    }
+  }
+}
+
+@keyframes animate {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.show {
+  animation: animate 1.5s;
+  animation-fill-mode: forwards;
+}

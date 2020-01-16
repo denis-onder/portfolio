@@ -1,3 +1,5 @@
+import animateBars from "./animateBars";
+
 function handleAnimation() {
   const loader = document.getElementById("animation_loader");
   const root = document.getElementById("root_wrapper");
@@ -27,4 +29,10 @@ export default (path = false) => {
     .getElementById("navigation_modal")
     .classList.remove("navigation_modal--open");
   handleAnimation();
+  // If the current path's /about, run the bars animation
+  if (path === "/about") {
+    setTimeout(() => {
+      animateBars();
+    }, 2000);
+  }
 };
