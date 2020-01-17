@@ -32,8 +32,9 @@ export default (path = false) => {
   if (path) handleAnimation();
   // Disable vertical navigation spans
   const spans = document.getElementById("vertical_navigation").children;
-  spans[1].style.backgroundColor = currentPath === "/" ? "gray" : "red";
-  spans[0].style.backgroundColor = currentPath === "/contact" ? "gray" : "red";
+  spans[1].style.backgroundColor = currentPath === "/" ? "gray" : "#F15025";
+  spans[0].style.backgroundColor =
+    currentPath === "/contact" ? "gray" : "#F15025";
   // If the current path's /about, run the bars animation
   if (currentPath === "/about") {
     setTimeout(() => {
