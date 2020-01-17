@@ -1,0 +1,23 @@
+[[redirects]]
+  from = "/about"
+  to = "/"
+  status = 301
+  force = false
+  query = {path = ":path"}
+  conditions = {Language = ["en"], Country = ["US"], Role = ["admin"]}
+
+[[redirects]]
+  from = "/portfolio"
+  to = "/"
+  status = 301
+  force = false
+  query = {path = ":path"}
+  conditions = {Language = ["en"], Country = ["US"], Role = ["admin"]}
+
+[[redirects]]
+  from = "/contact"
+  to = "/"
+  status = 301
+  force = false
+  query = {path = ":path"}
+  conditions = {Language = ["en"], Country = ["US"], Role = ["admin"]}
