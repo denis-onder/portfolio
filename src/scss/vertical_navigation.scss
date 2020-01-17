@@ -1,6 +1,7 @@
 @import "./imports/_vars";
 
 #vertical_navigation {
+  z-index: 1;
   position: fixed;
   bottom: 25px;
   right: 10px;
