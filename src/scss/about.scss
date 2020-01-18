@@ -36,6 +36,8 @@
   #about {
     margin: 25px 10px;
     .about_header {
+      text-align: center;
+      margin-top: 50px;
       font-size: 50px;
       margin-bottom: 8px;
     }
@@ -50,13 +52,12 @@
   #about {
     .about_header {
       text-align: center;
-      margin-top: 35px;
       font-size: 40px;
     }
     .about_text_paragraph {
       margin-left: 10px;
       margin-right: 10px;
-      font-size: 18px;
+      // font-size: 18px;
     }
   }
 }

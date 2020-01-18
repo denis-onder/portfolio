@@ -4,7 +4,7 @@ function generateLinesAndBars() {
   container.innerHTML = "";
   container.style.display = "flex";
   // Generate an arbitraty amount of lines
-  const numberOfLines = Math.floor(Math.random() * (70 - 25 + 1)) + 25;
+  const numberOfLines = 45;
   for (let i = 0; i < numberOfLines; i++) {
     const line = document.createElement("div");
     line.classList.add("container_line");
