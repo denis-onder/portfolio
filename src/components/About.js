@@ -2,6 +2,8 @@ import React, { Fragment } from "react";
 import setTitle from "../events/setTitle";
 import "../scss/about.scss";
 import CodeBars from "./layout/CodeBars";
+import setCurrentlyActiveIcon from "../events/setCurrentlyActiveIcon";
+import { Link } from "react-router-dom";
 
 export default function About() {
   setTitle("about");
@@ -50,6 +52,18 @@ export default function About() {
               denis_onder@protonmail.com
             </a>
             .
+          </p>
+          <p className="about_text_paragraph">
+            Or better yet, you can email me directly using the{" "}
+            <Link to="/contact">
+              <span
+                style={{ cursor: "pointer" }}
+                onClick={() => setCurrentlyActiveIcon("/contact")}
+              >
+                contact
+              </span>{" "}
+            </Link>
+            form!
           </p>
           <p className="about_text_paragraph">
             Looking forward to talking with you!

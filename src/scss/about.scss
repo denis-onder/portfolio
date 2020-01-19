@@ -12,14 +12,15 @@
     a {
       text-decoration: none;
       color: #fff;
-      &:hover {
-        border-bottom-color: $dark_red;
-      }
     }
     a,
     span {
       transition: $transition;
       border-bottom: 2px solid $red;
+      &:hover,
+      &:focus {
+        border-bottom-color: $dark_red;
+      }
     }
   }
 }
@@ -57,7 +58,6 @@
     .about_text_paragraph {
       margin-left: 10px;
       margin-right: 10px;
-      // font-size: 18px;
     }
   }
 }
