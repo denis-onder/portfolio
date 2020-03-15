@@ -7,7 +7,6 @@ import "../scss/portfolio.scss";
 export default function Portfolio() {
   setTitle("portfolio");
   return (
-    // FIXME Remove hardcoded test components
     <div id="portfolio">
       {constants.map(i => (
         <Work
