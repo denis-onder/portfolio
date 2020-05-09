@@ -8,13 +8,13 @@ export default function Portfolio() {
   setTitle("portfolio");
   return (
     <div id="portfolio">
-      {constants.map(i => (
+      {constants.map((i, key) => (
         <Work
           img={i.img}
           sourceCode={i.sourceCode}
           link={i.link}
           name={i.name}
-          key={i.key}
+          key={key}
           desc={i.desc}
         />
       ))}

@@ -1,6 +1,7 @@
 @import "./imports/_vars";
 
 #info {
+  display: none; // The info tag is no more needed
   z-index: 3;
   transform: translateX(200%);
   transition: $transition;
