@@ -31,7 +31,11 @@
     }
     span {
       border-bottom: 2px solid $red;
+      transition: $transition;
       cursor: pointer;
+      &:hover {
+        border-bottom-color: $dark_red;
+      }
     }
   }
   .home_link {
