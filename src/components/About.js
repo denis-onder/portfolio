@@ -15,14 +15,14 @@ export default function About() {
         </h1>
         <div className="about_text">
           <p className="about_text_paragraph">
-            Hi, my name is <span>Denis Onder</span>, and I am a web developer!
+            Hi, my name is <span>Denis Onder</span>, and I am a software developer!
           </p>
           <p className="about_text_paragraph">
             I’m passionate about building software, and I am always striving to
             go above and beyond to ensure I get the job done.
           </p>
           <p className="about_text_paragraph">
-            I’ve been programming for over two years now, and I love it because
+            I’ve been programming for over five years now. It started out as a hobby that turned into a career. I love it because
             it gives me the chance to build pieces of software that might have
             an impact on people's lives!
           </p>
